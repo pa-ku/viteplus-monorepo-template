@@ -4,7 +4,7 @@ const allowedOrigins = [
     'http://localhost:5173',
 ];
 
-export function corsMiddleware() {
+export default function corsMiddleware() {
     const CORS_OPTIONS = {
         origin: allowedOrigins,
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
