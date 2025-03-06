@@ -1,31 +1,38 @@
 <h1 align="center">⚡VitePlus Monorepo Template</h1>
+Already configured Nodejs + React monorepo with turbo
 
-Client
+#### Client
 `Vite` `TS` `React` `Vitest` `Tailwind` `tabler` <br>
 `Eslint (Common)` <br>
 `Prettier (With tailwind pluggin)`
 
-Api
+#### Api
 `Nodejs`
 `Express`
-`corsC`
+`cors`
 
 #### Create the project.
 
 ```shell
-pnpm dlx degit pa-ku/viteplus-template.git app-name
-```
-
-#### Access the project directory.
-
-```shell
-cd app-name
+pnpm dlx degit pa-ku/viteplus-monorepo-template.git .
 ```
 
 #### Install dependencies.
 
 ```shell
 pnpm install
+```
+
+#### Run the development
+
+```shell
+pnpm run dev
+
+```
+#### Or run just one
+```shell
+pnpm run dev:client
+pnpm run dev:api
 ```
 
 <br></br>
@@ -53,4 +60,4 @@ import Header from "@components/Header"
 <br></br>
 
 > [!IMPORTANT]
-> In this project, aliases are configured in tsconfig.app.json and vite.config.json, allowing them to be used in both TypeScript and Node.
+> In this project, aliases are configured in client/ tsconfig.app.json and vite.config.json, allowing them to be used in both TypeScript and Node.
